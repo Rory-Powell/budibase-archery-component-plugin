@@ -1,0 +1,59 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "archery-tracker",
+    "friendlyName": "Archery Tracker",
+    "description": "Track your archery scores",
+    "showSettingsBar": true,
+    "icon": "Text",
+    "settings": [
+      {
+        "type": "number",
+        "key": "targetSize",
+        "label": "Target Size",
+        "defaultValue": 500
+      },
+      {
+        "type": "select",
+        "key": "targetType",
+        "label": "Target Type",
+        "defaultValue": "olympic",
+        "showInBar": true,
+        "options": [
+          {
+            "label": "Olympic",
+            "value": "olympic"
+          },
+          {
+            "label": "NFAA",
+            "value": "nfaa"
+          }
+        ]
+      },
+      {
+        "type": "number",
+        "key": "arrowRadius",
+        "label": "Arrow Radius",
+        "defaultValue": 6
+      },
+      {
+        "type": "number",
+        "key": "strokeWidth",
+        "label": "Stroke Width",
+        "defaultValue": 1
+      },
+      {
+        "type": "event",
+        "label": "On Save Results",
+        "key": "onSaveResults",
+        "context": [
+          {
+            "label": "Results",
+            "key": "results"
+          }
+        ]
+      }
+    ]
+  }
+}
